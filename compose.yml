@@ -1,6 +1,15 @@
 services:
+
   core-console:
     image: condotframe/core-console:dev
     build:
       context: .
       dockerfile: Core.Console/Dockerfile
+
+  core-webapi:
+    image: condotframe/core-webapi:dev
+    build:
+      context: .
+      dockerfile: Core.WebApi/Dockerfile
+    ports:
+      - "5000:8080"
