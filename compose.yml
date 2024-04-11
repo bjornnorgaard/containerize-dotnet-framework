@@ -13,3 +13,9 @@ services:
       dockerfile: Core.WebApi/Dockerfile
     ports:
       - "5000:8080"
+
+  frame-console:
+    image: condotframe/frame-console:dev
+    build:
+      context: .
+      dockerfile: Frame.Console/Dockerfile
