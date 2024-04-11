@@ -1,0 +1,6 @@
+services:
+  core-console:
+    image: condotframe/core-console:dev
+    build:
+      context: .
+      dockerfile: Core.Console/Dockerfile
