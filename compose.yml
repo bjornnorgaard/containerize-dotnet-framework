@@ -1,5 +1,6 @@
 services:
 
+  # Linux containers
   # core-console:
   #   image: condotframe/core-console:dev
   #   build:
@@ -14,16 +15,17 @@ services:
   #   ports:
   #     - "5000:8080"
 
-  frame-console:
-    image: condotframe/frame-console:dev
-    build:
-      context: .
-      dockerfile: Frame.Console/Dockerfile
+  # Windows containers
+  # frame-console:
+  #   image: condotframe/frame-console:dev
+  #   build:
+  #     context: .
+  #     dockerfile: Frame.Console/Dockerfile
 
-  frame-webapi:
-    image: condotframe/frame-webapi:dev
-    build:
-      context: .
-      dockerfile: Frame.WebApi/Dockerfile
-    ports:
-      - "5001:8080"
+  # frame-webapi:
+  #   image: condotframe/frame-webapi:dev
+  #   build:
+  #     context: .
+  #     dockerfile: Frame.WebApi/Dockerfile
+  #   ports:
+  #     - "5001:8080"
